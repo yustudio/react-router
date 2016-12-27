@@ -36,8 +36,11 @@ const Address = (props) => (
 
 const Nav = () => (
 	<div>
-		<Link to='/'>Home</Link>&nbsp;
-		<Link to='/address'>Address</Link>
+		{/*onlyActiveOnIndex: only apply activeStyle on the selected link, not any descendents of linked route
+		e.g. Address is a descendent of Home, select Adress should not highlight Home as well*/}
+		<Link onlyActiveOnIndex activeStyle={{color:'#53acff'}} to='/'>Home</Link>&nbsp;
+		<Link activeStyle={{color:'#53acff'}} to='/address'>Address</Link>&nbsp;
+		<Link activeStyle={{color:'#53acff'}} to='/about'>About</Link>
 	</div>
 	)
 const Container = ({children}) =>   //{children} is same as {children} = props (es6 syntax)
