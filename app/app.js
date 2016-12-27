@@ -4,7 +4,7 @@ import {Router, Route, Link, IndexRoute, hashHistory, browserHistory, IndexLink}
 //const App = () => <h1> Hello World!!! </h1>
 
 class App extends Component {
-	render() {
+	render() { 
 		return (  //route has to be in order as they appear on the HTML page
 			<Router history={hashHistory}>
 				<Route path='/' component={Container}>
