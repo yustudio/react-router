@@ -1,4 +1,7 @@
 #React Router project
+## Steps to run todo app
+* `npm install`
+* `npm start`
 
 ## This project is to explore React router's features.
 * Frontend routing
